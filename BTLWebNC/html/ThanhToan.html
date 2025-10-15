@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Giỏ hàng</title>
+    <!-- Boostrap-->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icon-->
+    <link href="../fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <!-- File css-->
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/GioHang.css" rel="stylesheet" />
+    <link href="../css/home.css" rel="stylesheet" />
+  </head>
+  
+  <body class="bg-light">
+    <header class="fixed-top" style="background-color: #d62f12e5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-6 col-sm-3 col-md-3 col-lg-3"
+            style="margin-top: -10px"
+          >
+            <div class="row">
+              <div class="col text-center">
+                <div class="container logo">
+                  <p style="display: inline; font-size: 150%">
+                    <a href="TrangChu.html" style="color: white; text-decoration: none;">LAPTOP</a>
+                  </p>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col text-center"><p class="hethongbanle" style="display: inline; padding: 0px; margin: 0px;">
+              Hệ Thống bán lẻ uy tính
+            </p></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <form>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  placeholder="Tên Laptop, hãng sản xuất, cấu hình... "
+                  type="text"
+                />
+                <button class="btn btn-warning">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2" style="margin-top: -4px">
+            <div class="row">
+              <div class="col text-center">
+                <p class="hotline" style="padding: 0px; margin: 0px;">0123456789</p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col text-center"><p class="hotro" style="padding: 0px; margin: 0px;">Hotline hỗ trợ bán hàng</p></div>
+              </div>
+          </div>
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 dinhdanga">
+            <div class="row">
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                style="padding: 0px 2px 0px 0px; text-align: center"
+              >
+                <a href="GioHang.html"
+                  ><button class="btn btn-outline-warning" style="width: 100%; color: white;">
+                    <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                  </button></a>
+              </div>
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                id="odangnhap"
+                style="padding: 0px 0px 0px 2px"
+              >
+                <button class="btn btn-outline-warning" id="nutdangnhap" style="color: white;">
+                  <i class="fas fa-users"></i> Đăng nhập
+                </button>
+                <div id="bangdangnhap">
+                  <a href="dangnhap.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-users"></i> Đăng nhập
+                    </button></a
+                  >
+                  <a href="dangky.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-registered"></i> Tạo tài khoản
+                    </button></a
+                  >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Nội dung-->
+    <div class="container">
+      <div class="row text-center p-4 "><h1>Thông tin thanh toán</h1></div>
+      <div class="row thongtincanhan">
+            <form action="#">
+              <table>
+                <tr>
+                  <td><span>*</span> Họ tên:</td>
+                  <td>
+                    <input
+                      class="form-control hoten"
+                      placeholder="Họ tên"
+                      type="text" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>*</span> Số điện thoại:</td>
+                  <td>
+                    <input
+                      class="form-control sdt"
+                      placeholder="Số điện thoại"
+                      type="tel"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>*</span> Tỉnh thành</td>
+                  <td>
+                    <select class="form-control tinh" >
+                      <option selected="">Chọn Tỉnh/Thành Phố</option>
+                      <option>TP.Hồ Chí Minh</option>
+                      <option>Hà Nội</option>
+                      <option>Bac Ninh</option>
+                      <option>Gia Lai</option>
+                      <option>Phú Yên</option>
+                      <option>Bình Định</option>
+                      <option>Nha Trang</option>
+                      <option>Bình Dương</option>
+                      <option>Quảng Ngãi</option>
+                      <option>Nghệ An</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>*</span> Địa chỉ giao hàng:</td>
+                  <td>
+                    <input
+                      class="form-control diachi"
+                      placeholder="Số nhà, tên đường, phườngxã"
+                      type="text"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>*</span> Phương thức thanh toán:</td>
+                  <td>
+                    <select class="form-control tinh" id="pttt">
+                      <option selected="">Chọn phương thức</option>
+                      <option>Thanh toán khi nhận hàng</option>
+                      <option>Thanh toán trực tuyến</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr style="display: none;" id="select_nganhang">
+                  <td>
+                    Chọn ngân hàng:
+                  </td>
+                  <td>
+                    <select class="form-control tinh" >
+                      <option selected="MB">Chọn ngân hàng</option>
+                      <option>MB</option>
+                      <option>TPBank</option>
+                      <option>Viettinbank</option>
+                      <option>Vietcombank</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ghi chú:</td>
+                  <td>
+                    <input
+                      class="form-control ghichu"
+                      placeholder="Nhắn gởi tới người bán"
+                      type="text"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </form>
+      </div>
+      <div class="row">
+        <div class="col text-center"><button class="btn btn-success btn" id="btn_dathang">XÁC NHẬN THANH TOÁN</button></div>
+      </div>
+    </div>
+
+    <!-- end nội dung -->
+    <footer class="py-5 my-3 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 ulfooter">
+            <h5 xss="removed">LAPTOP</h5>
+            <hr />
+            <p>Địa chỉ: Ha Noi</p>
+            <p>Hotline bán hàng: 0123456789</p>
+            <div class="container">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+              <a href="#"><i class="fab fa-youtube-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>CHÍNH SÁCH CHUNG</h5>
+            <hr />
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách đổi trả hàng</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách vận chuyển</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bán hàng online</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bảo hành</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách trả góp</a></p>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>TRỢ GIÚP</h5>
+            <hr />
+            <p><a href="gioithieu.html" style="text-decoration: none;">Giới thiệu</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Thông tin liên lạc</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Hướng dẫn mua hàng online</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Hướng dẫn trả góp</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bảo hành</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="bg-light contaier-fluid"
+      style="font-size: 13px; color: slategray; text-align: center"
+    >
+      ©2005-2025 LAPTOP Copyright, All Rights Reserved.
+      <br />
+      <br />
+    </div>
+    <script src="../js/Home.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/dangnhap.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#pttt").change(function(){
+        var ptttoan=$("#pttt").val();
+        if(ptttoan=="Thanh toán trực tuyến"){
+          $("#select_nganhang").show();
+        }
+      });
+      $("#pttt").change(function(){
+        var ptttoan=$("#pttt").val();
+        if(ptttoan=="Thanh toán khi nhận hàng"){
+          $("#select_nganhang").hide();
+        }
+      });
+    });
+    $(document).ready(function(){
+      $("#btn_dathang").click(function(){
+        alert("Đặt hàng thành công");
+        window.location.href="../html/TrangChu.html";
+      });
+    });
+  </script>
+  </body>
+</html>
+

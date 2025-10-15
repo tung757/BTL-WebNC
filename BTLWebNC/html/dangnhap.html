@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ĐĂNG NHẬP</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="../css/dangnhap.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/home.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="fixed-top" style="background-color: #d62f12e5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3" style="margin-top: -10px">
+            <div class="row">
+              <div class="col text-center">
+                <div class="container logo">
+                  <p style="display: inline; font-size: 150%">
+                    <a href="TrangChu.html" style="color: white; text-decoration: none;">LAPTOP</a>
+                  </p>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col text-center"><p class="hethongbanle" style="display: inline; padding: 0px; margin: 0px;">
+              Hệ Thống bán lẻ uy tính
+            </p></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <form>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  placeholder="Tên Laptop, hãng sản xuất, cấu hình... "
+                  type="text"
+                />
+                <button class="btn btn-warning">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2" style="margin-top: -4px">
+            <div class="row">
+              <div class="col text-center">
+                <p class="hotline" style="padding: 0px; margin: 0px;">0123456789</p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col text-center"><p class="hotro" style="padding: 0px; margin: 0px;">Hotline hỗ trợ bán hàng</p></div>
+              </div>
+          </div>
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 dinhdanga">
+            <div class="row">
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                style="padding: 0px 2px 0px 0px; text-align: center"
+              >
+                <a href="GioHang.html"
+                  ><button class="btn btn-outline-warning" style="width: 100%; color: white;">
+                    <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                  </button></a
+                >
+              </div>
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                id="odangnhap"
+                style="padding: 0px 0px 0px 2px"
+              >
+                <button class="btn btn-outline-warning" id="nutdangnhap" style="color: white;">
+                  <i class="fas fa-users"></i> Đăng nhập
+                </button>
+                <div id="bangdangnhap">
+                  <a href="dangnhap.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-users"></i> Đăng nhập
+                    </button></a
+                  >
+                  <a href="dangky.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-registered"></i> Tạo tài khoản
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- CONTENT -->
+    <div
+      class="container-fluid"
+      style="
+        background-image: url(../image/dangky/hinh-nen-Galaxy-Wallpaper-23.jpg);
+        margin-top: 0.7%;
+      "
+    >
+      <div class="row my-1">
+        <div class="col-6 col-sm-6 com-md-6 col-lg-6 col-xl-6">
+          <img
+            alt=""
+            src="../image/dangky/Lovepik_com-832282987-Hand drawn cartoon laptop.png"
+            style="width: 95%; padding-left: 40px"
+          />
+        </div>
+        <div
+          class="col-6 col-sm-6 com-md-6 col-lg-6 col-xl-6 content"
+          style="padding-right: 15px">
+          <div class="container form">
+            <h4 style="display: inline">Đăng Nhập</h4>
+            <br />
+            <p class="float" style="color: grey; display: inline">
+              Thành viên mới? <a href="../html/dangky.html">Đăng ký</a></p>
+            <form action="" class="needs-validation" novalidate="" name="form_dangnhap">
+              <div class="mb-3">
+                <input
+                  class="form-control"
+                  id="taikhoan"
+                  name="uname"
+                  onblur="ktraEmail()"
+                  placeholder="Email/Số điện thoại/Tên đăng nhập"
+                  require=""
+                  type="text"
+                />
+                <span id="err1" style="color: red"></span>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">
+                  Tên đăng nhập không được để trống.
+                </div>
+              </div>
+              <div class="mb-3">
+                <div style="position: relative;">
+                  <input
+                  class="form-control"
+                  id="matkhau"
+                  name="pswd"
+                  onblur="ktraMatKhau()"
+                  placeholder="Mật Khẩu"
+                  required="" type="password">
+                   <span id="togglePassword" style="position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor:pointer;">
+                    👁️
+                  </span>
+                </div>
+                <span id="err2" style="color: red"></span>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">
+                  Mật khẩu không được để trốnng.
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <button
+                    class="btn bnt1" id="btn_dangnhap" style="width: 100%; background-color: #ee4d2d" type="button" >
+                    Đăng nhập
+                  </button>
+                </div>
+              </div>
+              <p style="text-align: center; font-size: 13px; margin-top: 10px">
+                Hoặc, đăng nhập bằng
+              </p>
+              <div class="container">
+                <div class="row my-1">
+                  <button
+                    class="btn bnt1"
+                    style="width: 100%; background-color: #3b5998"
+                    type="submit"
+                  >
+                    <i class="fab fa-facebook-square"></i> Facebook
+                  </button>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row my-1">
+                  <button
+                    class="btn bnt1"
+                    style="width: 100%; background-color: #d34836"
+                    type="submit"
+                  >
+                    <i class="fab fa-google-plus-square"></i> Google
+                  </button>
+                </div>
+              </div>
+              <div class="container">
+                <br />
+                <a href="QuenMatKhau.html" style="font-size: 15px; float: right"
+                  >Quên mật khẩu ?</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Đăng nhập thành công</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body" id="hienthiThongTin">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td>Họ tên</td>
+                  <td class="modalThongTin">ABC</td>
+                </tr>
+                <tr>
+                  <td>Số điện thoại</td>
+                  <td class="modalThongTin">ABC</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="py-5 my-3 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 ulfooter">
+            <h5 xss="removed">LAPTOP</h5>
+            <hr />
+            <p>Địa chỉ: Ha Noi</p>
+            <p>Hotline bán hàng: 0123456789</p>
+            <div class="container">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+              <a href="#"><i class="fab fa-youtube-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>CHÍNH SÁCH CHUNG</h5>
+            <hr />
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách đổi trả hàng</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách vận chuyển</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bán hàng online</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bảo hành</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách trả góp</a></p>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>TRỢ GIÚP</h5>
+            <hr />
+            <p><a href="gioithieu.html" style="text-decoration: none;">Giới thiệu</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Thông tin liên lạc</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Hướng dẫn mua hàng online</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Hướng dẫn trả góp</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bảo hành</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="bg-light contaier-fluid"
+      style="font-size: 13px; color: slategray; text-align: center"
+    >
+      ©2005-2025 LAPTOP Copyright, All Rights Reserved.
+      <br />
+      <br />
+    </div>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/dangnhap.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn_dangnhap").click(function(){
+          var modal= new bootstrap.Modal(document.getElementById('myModal'));
+          modal.show();
+        });
+      });
+    </script>
+    <script>
+      $('#togglePassword').on('click', function () {
+        const passwordInput = $('#matkhau');
+        const type = passwordInput.attr('type') === 'password' ? 'text' : 'password';
+        passwordInput.attr('type', type);
+        $(this).text(type === 'password' ? '👁️' : '🙈');
+      });
+    </script>
+  </body>
+</html>

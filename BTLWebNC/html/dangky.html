@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ĐĂNG KÝ</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="../css/dangky.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/home.css" rel="stylesheet" />
+    <style>
+      .ktra {
+        color: red;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="fixed-top" style="background-color: #d62f12e5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-6 col-sm-3 col-md-3 col-lg-3"
+            style="margin-top: -10px"
+          >
+            <div class="row">
+              <div class="col text-center">
+                <div class="container logo">
+                  <p style="display: inline; font-size: 150%">
+                    <a href="TrangChu.html" style="color: white; text-decoration: none;">LAPTOP</a>
+                  </p>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col text-center"><p class="hethongbanle" style="display: inline; padding: 0px; margin: 0px;">
+              Hệ Thống bán lẻ uy tính
+            </p></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <form>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  placeholder="Tên Laptop, hãng sản xuất, cấu hình... "
+                  type="text"
+                />
+                <button class="btn btn-warning">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2" style="margin-top: -4px">
+          <div class="row">
+              <div class="col text-center">
+                <p class="hotline" style="padding: 0px; margin: 0px;">0123456789</p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col text-center"><p class="hotro" style="padding: 0px; margin: 0px;">Hotline hỗ trợ bán hàng</p></div>
+              </div>
+          </div>
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 dinhdanga">
+            <div class="row">
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                style="padding: 0px 2px 0px 0px; text-align: center"
+              >
+                <a href="GioHang.html"
+                  ><button class="btn btn-outline-warning" style="width: 100%; color: white;">
+                    <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                  </button></a
+                >
+              </div>
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                id="odangnhap"
+                style="padding: 0px 0px 0px 2px"
+              >
+                <button class="btn btn-outline-warning" id="nutdangnhap" style="color: white;">
+                  <i class="fas fa-users"></i> Đăng nhập
+                </button>
+                <div id="bangdangnhap">
+                  <a href="dangnhap.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-users"></i> Đăng nhập
+                    </button></a
+                  >
+                  <a href="dangky.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-registered"></i> Tạo tài khoản
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- CONTENT -->
+    <div
+      class="container-fluid"
+      style="
+        margin-top: 0.7%;
+        background-image: url(../image/dangky/hinh-nen-Galaxy-Wallpaper-23.jpg);
+      "
+    >
+      <div class="row my-1">
+        <div class="col-xs-col-lg-6 col-sm-6 com-md-6 col-lg-6 col-xl-6">
+          <img
+            alt=""
+            src="../image/dangky/Lovepik_com-832282987-Hand drawn cartoon laptop.png"
+            style="width: 95%; padding-left: 40px"
+          />
+        </div>
+        <div
+          class="col-xs-col-lg-6 col-sm-6 com-md-6 col-lg-6 col-xl-6 content"
+        >
+          <div class="container form">
+            <h4 style="display: inline">Đăng Ký</h4>
+            <br />
+            <br />
+            <form name="formThongTin">
+              <table class="tabledk" style="width: 100%; padding: 30px">
+                <tr style="margin-bottom: 50px">
+                  <td class="lable1">Họ Tên</td>
+                  <td>
+                    <input
+                      class="form-control"
+                      id="hoten"
+                      name="hoten"
+                      onblur="ktraHoTen()"
+                      placeholder=" Nhập họ tên"
+                      type="text"
+                    />
+                    <span class="ktra" id="er1"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Số điện thoại</td>
+                  <td>
+                    <input
+                      class="form-control"
+                      id="sodienthoai"
+                      name="sdt"
+                      onblur="ktraSDT()"
+                      placeholder=" Nhập số điện thoại"
+                      type="text"
+                    />
+                    <span class="ktra" id="er2"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>
+                    <input
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      onblur="ktraEmail()"
+                      placeholder=" Nhập Email"
+                      type="text"
+                    />
+                    <span class="ktra" id="er3"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mật khẩu</td>
+                  <td>
+                    <div style="position: relative;">
+                      <input
+                      class="form-control"
+                      id="matkhau"
+                      name="matkhau"
+                      onblur="ktraMatKhau()"
+                      placeholder=" Mật khẩu từ 8 đến 16 ký tự"
+                      type="password"
+                    />
+                    <span id="togglePassword" style="position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor:pointer;">
+                      👁️
+                    </span>
+                    <span class="ktra" id="er4"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Xác nhận mật khẩu</td>
+                  <td>
+                    <input
+                      class="form-control"
+                      id="xacnhanmatkhau"
+                      name="xacnhanmatkhau"
+                      onblur="xacnhanMatKhau()"
+                      placeholder=" Nhập lại mật khẩu"
+                      type="password"
+                    />
+                    <span class="ktra" id="er5"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Giới tính</td>
+                  <td>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="radio1">
+                        <input
+                          checked=""
+                          class="form-check-input"
+                          id="radio1"
+                          name="gioitinh"
+                          type="radio"
+                          value="Nam"
+                        />Nam
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="radio2">
+                        <input
+                          class="form-check-input"
+                          id="radio2"
+                          name="gioitinh"
+                          type="radio"
+                          value="Nữ"
+                        />Nữ
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ngày Sinh</td>
+                  <td>
+                    <input
+                      class="form-control"
+                      id="ngaysinh"
+                      name="ngaysinh"
+                      onblur=""
+                      type="date"
+                    />
+                    <span class="ktra" id="er6"></span>
+                  </td>
+                </tr>
+              </table>
+              <br />
+              <input id="" name="" type="checkbox" />
+              <span
+                >Nhận các thông tin và chương trình khuyến mãi của shop qua
+                Email</span
+              >
+              <br />
+              <button
+                class="btn btn-warning"
+                id="dangky"
+                onclick="hienThiDuLieu()"
+                style="width: 100%"
+                type="button" >
+                Tạo tài khoản
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Nội dung đăng ký tài khoản</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body" id="hienthiThongTin">
+                      <table class="table table-hover">
+                        <tbody>
+                          <tr>
+                            <td>Họ tên</td>
+                            <td class="modalThongTin"></td>
+                          </tr>
+                          <tr>
+                            <td>Số điện thoại</td>
+                            <td class="modalThongTin"></td>
+                          </tr>
+                          <tr>
+                            <td>Email</td>
+                            <td class="modalThongTin"></td>
+                          </tr>
+                          <tr>
+                            <td>Mật Khẩu</td>
+                            <td class="modalThongTin"></td>
+                          </tr>
+                          <tr>
+                            <td>Giới tính</td>
+                            <td class="modalThongTin"></td>
+                          </tr>
+                          <tr>
+                            <td>Ngày sinh</td>
+                            <td class="modalThongTin"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </form>
+            <br />
+            <!-- endform -->
+          </div>
+          <div class="container">
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="py-5 my-3 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 ulfooter">
+            <h5 xss="removed">LAPTOP</h5>
+            <hr />
+            <p>Địa chỉ: HaNoi</p>
+            <p>Hotline bán hàng: 0123456789</p>
+            <div class="container">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+              <a href="#"><i class="fab fa-youtube-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>CHÍNH SÁCH CHUNG</h5>
+            <hr />
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách đổi trả hàng</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách vận chuyển</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bán hàng online</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bảo hành</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách trả góp</a></p>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>TRỢ GIÚP</h5>
+            <hr />
+            <p><a href="gioithieu.html" style="text-decoration: none;">Giới thiệu</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Thông tin liên lạc</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Hướng dẫn mua hàng online</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Hướng dẫn trả góp</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bảo hành</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="bg-light contaier-fluid"
+      style="font-size: 13px; color: slategray; text-align: center"
+    >
+      ©2005-2025 LAPTOP Copyright, All Rights Reserved.
+      <br />
+      <br />
+    </div>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/dangky.js"></script>
+    <script>
+      $("#odangnhap").mouseenter(function () {
+        $("#bangdangnhap").fadeIn();
+      });
+
+      $("#odangnhap").mouseleave(function () {
+        $("#bangdangnhap").fadeOut();
+      });
+      
+    </script>
+    <script>
+      $('#togglePassword').on('click', function () {
+        const passwordInput = $('#matkhau');
+        const type = passwordInput.attr('type') === 'password' ? 'text' : 'password';
+        passwordInput.attr('type', type);
+        $(this).text(type === 'password' ? '👁️' : '🙈');
+      });
+    </script>
+  </body>
+</html>

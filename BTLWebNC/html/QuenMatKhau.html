@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ĐĂNG NHẬP</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="../css/dangnhap.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/home.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="fixed-top" style="background-color: #d62f12e5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-6 col-sm-3 col-md-3 col-lg-3"
+            style="margin-top: -10px"
+          >
+            <div class="row">
+              <div class="col text-center">
+                <div class="container logo">
+                  <p style="display: inline; font-size: 150%">
+                    <a
+                      href="TrangChu.html"
+                      style="color: white; text-decoration: none"
+                      >LAPTOP</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <p
+                  class="hethongbanle"
+                  style="display: inline; padding: 0px; margin: 0px"
+                >
+                  Hệ Thống bán lẻ uy tính
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <form>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  placeholder="Tên Laptop, hãng sản xuất, cấu hình... "
+                  type="text"
+                />
+                <button class="btn btn-warning">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="col-2 col-sm-2 col-md-2 col-lg-2"
+            style="margin-top: -4px"
+          >
+            <div class="row">
+              <div class="col text-center">
+                <p class="hotline" style="padding: 0px; margin: 0px">
+                  0123456789
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <p class="hotro" style="padding: 0px; margin: 0px">
+                  Hotline hỗ trợ bán hàng
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 dinhdanga">
+            <div class="row">
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                style="padding: 0px 2px 0px 0px; text-align: center"
+              >
+                <a href="GioHang.html"
+                  ><button
+                    class="btn btn-outline-warning"
+                    style="width: 100%; color: white"
+                  >
+                    <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                  </button></a
+                >
+              </div>
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                id="odangnhap"
+                style="padding: 0px 0px 0px 2px"
+              >
+                <button
+                  class="btn btn-outline-warning"
+                  id="nutdangnhap"
+                  style="color: white"
+                >
+                  <i class="fas fa-users"></i> Đăng nhập
+                </button>
+                <div id="bangdangnhap">
+                  <a href="dangnhap.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-users"></i> Đăng nhập
+                    </button></a
+                  >
+                  <a href="dangky.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-registered"></i> Tạo tài khoản
+                    </button></a
+                  >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- CONTENT -->
+    <div class="bg-light container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm p-4">
+            <h4 class="text-center text-danger mb-3">
+              <i class="fas fa-unlock-alt me-2"></i>Quên mật khẩu
+            </h4>
+            <p class="text-center text-muted">
+              Nhập địa chỉ email để khôi phục mật khẩu.
+            </p>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Địa chỉ Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-danger">
+                  Gửi liên kết khôi phục
+                </button>
+              </div>
+            </form>
+            <div class="text-center mt-3">
+              <a
+                href="dangnhap.html"
+                class="text-decoration-none"
+                style="color: black"
+                >← Quay lại đăng nhập</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="py-5 my-3 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 ulfooter">
+            <h5 xss="removed">LAPTOP</h5>
+            <hr />
+            <p>Địa chỉ: Ha Noi</p>
+            <p>Hotline bán hàng: 0123456789</p>
+            <div class="container">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+              <a href="#"><i class="fab fa-youtube-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>CHÍNH SÁCH CHUNG</h5>
+            <hr />
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Chính sách đổi trả hàng</a
+              >
+            </p>
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Chính sách vận chuyển</a
+              >
+            </p>
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Chính sách bán hàng online</a
+              >
+            </p>
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Chính sách bảo hành</a
+              >
+            </p>
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Chính sách trả góp</a
+              >
+            </p>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>TRỢ GIÚP</h5>
+            <hr />
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Giới thiệu</a
+              >
+            </p>
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Thông tin liên lạc</a
+              >
+            </p>
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Hướng dẫn mua hàng online</a
+              >
+            </p>
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Hướng dẫn trả góp</a
+              >
+            </p>
+            <p>
+              <a href="gioithieu.html" style="text-decoration: none"
+                >Chính sách bảo hành</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="bg-light contaier-fluid"
+      style="font-size: 13px; color: slategray; text-align: center"
+    >
+      ©2005-2025 LAPTOP Copyright, All Rights Reserved.
+      <br />
+      <br />
+    </div>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/dangnhap.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn_dangnhap").click(function () {
+          var modal = new bootstrap.Modal(document.getElementById("myModal"));
+          modal.show();
+        });
+      });
+    </script>
+  </body>
+</html>

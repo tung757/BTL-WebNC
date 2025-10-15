@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Giỏ hàng</title>
+    <!-- Boostrap-->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icon-->
+    <link href="../fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <!-- File css-->
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/GioHang.css" rel="stylesheet" />
+    <link href="../css/home.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <header class="fixed-top" style="background-color: #d62f12e5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-3 col-md-3 col-lg-3" style="margin-top: -10px">
+            <div class="row">
+              <div class="col text-center">
+                <div class="container logo">
+                  <p style="display: inline; font-size: 150%">
+                    <a href="TrangChu.html" style="color: white; text-decoration: none;">LAPTOP</a>
+                  </p>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col text-center"><p class="hethongbanle" style="display: inline; padding: 0px; margin: 0px;">
+              Hệ Thống bán lẻ uy tính
+            </p></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <form>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  placeholder="Tên Laptop, hãng sản xuất, cấu hình... "
+                  type="text"
+                />
+                <button class="btn btn-warning">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2" style="margin-top: -4px">
+            <div class="row">
+              <div class="col text-center">
+                <p class="hotline" style="padding: 0px; margin: 0px;">0123456789</p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col text-center"><p class="hotro" style="padding: 0px; margin: 0px;">Hotline hỗ trợ bán hàng</p></div>
+              </div>
+          </div>
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 dinhdanga">
+            <div class="row">
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                style="padding: 0px 2px 0px 0px; text-align: center"
+              >
+                <a href="GioHang.html"
+                  ><button class="btn btn-outline-warning" style="width: 100%; color: white;">
+                    <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                  </button></a>
+              </div>
+              <div
+                class="col-sx-6 col-sm-6 col-md-6 col-lg-6"
+                id="odangnhap"
+                style="padding: 0px 0px 0px 2px"
+              >
+                <button class="btn btn-outline-warning" id="nutdangnhap" style="color: white;">
+                  <i class="fas fa-users"></i> Đăng nhập
+                </button>
+                <div id="bangdangnhap">
+                  <a href="dangnhap.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-users"></i> Đăng nhập
+                    </button></a
+                  >
+                  <a href="dangky.html"
+                    ><button class="btn btn-warning">
+                      <i class="fas fa-registered"></i> Tạo tài khoản
+                    </button></a
+                  >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Nội dung-->
+    <div class="content my-4 bg-white">
+      <div class="container">
+        <!-- Chi tiet san pham-->
+         <div class="row">
+          <div class="col-md-9">
+            <table class="table">
+            <thead>
+              <tr>
+                <th>Tên sản Phẩm</th>
+                <th>Hình ảnh</th>
+                <th>Giá</th>
+                <th>Số Lượng</th>
+                <th>Thành Tiền</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+              <!-- Sản phẩm sẽ được thêm bằng JS -->
+            </tbody>
+          </table>
+          </div>
+          <div class="col-md-3">
+          <div class="card">
+            <div class="card-body border border-2 rounded-5 w-100 text-center p-5 bg-light">
+              <h5>Tổng Tiền</h5>
+              <p id="cart-total">0 VNĐ</p>
+            </div>
+          </div>
+        </div>
+         </div>
+
+        <!--Nút đặt hàng-->
+        <div class="nutdathang">
+          <button class="btn btn-warning btn-lg" id="btndathang"><a href="../html/ThanhToan.html" style="text-decoration: none; color: black;">ĐẶT HÀNG</a></button>
+
+          <!-- Modal thong tin dat hang -->
+           <!-- Modal -->
+          <button class="btn btn-success btn-lg">
+            Mua Trả Góp Thẻ VISA/Master/JCB
+          </button>
+        </div>
+        <!-- Nút đặt hàng-->
+      </div>
+    </div>
+    <!-- end nội dung -->
+    <footer class="py-5 my-3 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 ulfooter">
+            <h5 xss="removed">LAPTOP</h5>
+            <hr />
+            <p>Địa chỉ: Ha Noi</p>
+            <p>Hotline bán hàng: 0123456789</p>
+            <div class="container">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+              <a href="#"><i class="fab fa-youtube-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>CHÍNH SÁCH CHUNG</h5>
+            <hr />
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách đổi trả hàng</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách vận chuyển</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bán hàng online</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bảo hành</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách trả góp</a></p>
+          </div>
+          <div class="col-3 ulfooter f_black">
+            <h5>TRỢ GIÚP</h5>
+            <hr />
+            <p><a href="gioithieu.html" style="text-decoration: none;">Giới thiệu</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Thông tin liên lạc</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Hướng dẫn mua hàng online</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Hướng dẫn trả góp</a></p>
+            <p><a href="gioithieu.html" style="text-decoration: none;">Chính sách bảo hành</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="bg-light contaier-fluid"
+      style="font-size: 13px; color: slategray; text-align: center"
+    >
+      ©2005-2025 LAPTOP Copyright, All Rights Reserved.
+      <br />
+      <br />
+    </div>
+    <script src="../js/Home.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/GioHang.js"></script>
+    <script src="../js/dangnhap.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCart();
+      function loadCart(){
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        let total = 0;
+
+        cartItems.innerHTML = '';
+        cart.forEach((item,index) => {
+          const price = parseFloat(item.price.replace(/[^0-9]/g, ''));
+          total += price;
+          cartItems.innerHTML += `
+            <tr data-index="${index}">
+              <td>${item.name}</td>
+              <td><img src="${item.image}" style="height: 70px; width:70px;"/></td>
+              <td >${item.price}</td>
+              <td><input type="number"  value="1" min="1" style="width: 60px;"></td>
+              <td >${item.price}</td>
+              <td><button class="btn btn-danger btn-sm btn_xoa">Xóa</button></td>
+            </tr>
+          `;
+        });
+        cartTotal.textContent = total.toLocaleString() + ' VNĐ';
+        document.querySelectorAll('.btn_xoa').forEach(button => {
+        button.addEventListener('click', function () {
+          const row = this.closest('tr');
+          const index = row.getAttribute('data-index');
+          cart.splice(index, 1); 
+          localStorage.setItem('cart', JSON.stringify(cart)); 
+          loadCart(); 
+        });
+        });
+      }
+    });
+
+    // $(document).ready(function(){
+    //   $(".soluongsp").change(function(){
+    //     var sl=parseInt($(this).val());
+    //     var tien1sp=parseInt($(this).prev(".tien_1sp").val());
+    //     var tien_n=sl*tien1sp;
+    //     var pt = $(this).next(".tien_sl");
+    //     pt.html(tien_n);
+    //   });
+    // });
+    </script>
+
+  </body>
+</html>
+
